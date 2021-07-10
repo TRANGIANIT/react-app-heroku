@@ -1,0 +1,28 @@
+.container {
+  width: 960px;
+  margin: 0 auto;
+  border:1px solid black;
+  padding:2em;
+}
+
+#content {
+  overflow: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+#post {
+  background-color: blue;
+  width: 590px;
+  height:300px;
+  float: left;
+}
+#sidebar {
+  background-color: red;
+  width: 370px;
+  float: right;
+  height:300px;
+}
+

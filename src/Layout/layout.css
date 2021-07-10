@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.254;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #3b8bba;
+  transform: all 0.5s;
+  -moz-transform: all 0.5s;
+  -webkit-transform: all 0.5s;
+}
+
+a:hover {
+  color: #4aba3b;
+}
+
+#container {
+  padding-left: 150px;
+  position: relative;
+  left: 0px;
+  width: 100%;
+}
+
+#menu {
+  position: fixed;
+  height: 100%;
+  background-color: black;
+  width: 150px;
+  left: 0px;
+}
+
+/*==Menu ==*/
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  line-height: 2.9em;
+  height: 2.9em;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -webkit-transition: all 0.5s;
+  position: relative;
+}
+
+#menu ul li a {
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding: 0 1em;
+}
+
+#menu ul li:hover {
+  background-color: #454545;
+}
+
+
+/* ==sub-menu */
+#menu .sub-menu{
+  display: none;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  left: 150px;
+  background-color: black;
+  border-bottom: 1px solid #333;
+  transition: all 2s;
+}
+
+#menu ul li:hover .sub-menu{
+  transition: all 2s;
+  display: block;
+}
+
+/* ===Content=== */
+#content {
+  padding: 1em 8em;
+}
+
+#header,
+.call-to-action {
+  text-align: center;
+}
+
+/* ==Header=== */
+#header {
+}
+#header #logo {
+}
+#header #slogan {
+  color: #333;
+  font-size: 0.8em;
+}
+
+/* ==call-to-action== */
+.call-to-action {
+  padding: 1.5em 20%;
+  background-color: #efefef;
+  border: 1px solid #e8e8e8;
+}
+
+/* ===.now */
+
+.row {
+  overflow: hidden;
+  margin: 1.5em auto;
+}
+
+.row .col {
+  float: left;
+  width: 31%;
+  margin-right: 2em;
+}
+
+.row .col:last-child {
+  float: right;
+  margin-right: 0%;
+}
+
+.row .col img {
+  float: left;
+}
+
+/*====Footer==== */
+#footer {
+  font-size: 20px;
+  border-top: 1px solid #b1a9a9;
+  color: #454545;
+  padding: 1em 3em;
+}
+
